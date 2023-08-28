@@ -3,13 +3,10 @@ from flask import render_template, url_for
 from werkzeug.middleware.proxy_fix import ProxyFix
 from flask_alembic import Alembic
 from .db import db
-from books.models import Author, Book
+from books.models import Author, Book, Rating
 from itertools import chain
 import csv
 import os
-
-
-
 
 
 def create_app():
